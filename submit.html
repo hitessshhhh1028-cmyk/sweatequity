@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit your story — Sweat Equity</title>
+<meta name="description" content="Pitch your bootstrapped founder story to Sweat Equity.">
+<link rel="stylesheet" href="style.css">
+<!-- GA4 tag goes here too, same snippet as index.html -->
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Sweat<em>Equity</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="submit.html" class="active">Submit a story</a></li>
+    </ul>
+    <a href="submit.html" class="nav-cta">Pitch your story</a>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:32px;">
+  <div class="wrap" style="max-width:56ch;">
+    <h1 style="max-width:none;">Pitch your story.</h1>
+    <p class="lede">Built something from nothing, no funding? Tell us the real numbers. If it checks out, we'll reach out to set up a 15-minute conversation.</p>
+  </div>
+</header>
+
+<section style="border-top:none;padding-top:0;">
+  <div class="wrap form-shell">
+    <form onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch if it\'s a fit. (Demo form)');">
+
+      <label for="name">Your name</label>
+      <input type="text" id="name" required>
+
+      <label for="business">Business or venture name</label>
+      <input type="text" id="business" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="link">Website or Instagram handle</label>
+      <input type="url" id="link" placeholder="https://">
+
+      <label for="category">Category</label>
+      <select id="category">
+        <option>Services</option>
+        <option>Food</option>
+        <option>Retail</option>
+        <option>SaaS / Tech</option>
+        <option>Ed-tech</option>
+        <option>Other</option>
+      </select>
+
+      <label for="numbers">The headline numbers</label>
+      <input type="text" id="numbers" placeholder="e.g. ₹30,000 to ₹5L/month in 14 months" required>
+      <p class="hint">Rough figures are fine for now — we verify details before publishing.</p>
+
+      <label for="story">The short version</label>
+      <textarea id="story" placeholder="What did you start with, what almost broke it, and what changed the trajectory?" required></textarea>
+
+      <div style="margin-top:28px;">
+        <button type="submit" class="btn btn-primary">Submit pitch</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sweat Equity. Every story, verified.</span>
+    <ul class="social-links">
+      <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#" target="_blank" rel="noopener">X / Twitter</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
