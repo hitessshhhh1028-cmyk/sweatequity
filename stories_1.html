@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stories — Sweat Equity</title>
+<meta name="description" content="Every verified bootstrapped founder story, in one directory.">
+<link rel="stylesheet" href="style.css">
+<!-- GA4 tag goes here too, same snippet as index.html -->
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Sweat<em>Equity</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
+      <li><a href="submit.html">Submit a story</a></li>
+    </ul>
+    <a href="submit.html" class="nav-cta">Pitch your story</a>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:40px;">
+  <div class="wrap" style="max-width:56ch;">
+    <h1 style="max-width:none;">The story directory</h1>
+    <p class="lede">Every founder we've featured, with the numbers up front. Filter by category, or just start reading.</p>
+  </div>
+</header>
+
+<section style="border-top:none;padding-top:0;">
+  <div class="wrap">
+    <div class="stories-grid" id="stories-grid">
+      <p style="color:var(--paper-dim);">Loading stories…</p>
+    </div>
+
+    <script>
+      fetch('stories.json')
+        .then(res => res.json())
+        .then(stories => {
+          const grid = document.getElementById('stories-grid');
+          grid.innerHTML = stories.map(s => `
+            <a href="${s.link}" class="story-card">
+              <div class="stat">${s.stat}</div>
+              <h3>${s.title}</h3>
+              <p>${s.description}</p>
+              <div class="meta">${s.category}</div>
+            </a>
+          `).join('');
+        })
+        .catch(() => {
+          document.getElementById('stories-grid').innerHTML =
+            '<p style="color:var(--paper-dim);">Couldn\'t load stories — check stories.json.</p>';
+        });
+    </script>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sweat Equity. Every story, verified.</span>
+    <ul class="social-links">
+      <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#" target="_blank" rel="noopener">X / Twitter</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

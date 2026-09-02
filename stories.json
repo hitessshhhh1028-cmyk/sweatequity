@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Ferngrove Studio",
+    "stat": "₹0 → ₹6.2L/mo · 18 months",
+    "description": "A one-person design studio that fired its biggest client to raise prices — and grew faster afterward.",
+    "category": "Bootstrapped · Services",
+    "link": "#"
+  },
+  {
+    "title": "Kadai Kitchens",
+    "stat": "₹2L savings → ₹40L ARR · 3 yrs",
+    "description": "A cloud-kitchen brand that grew through three failed menus before finding the one that worked.",
+    "category": "Bootstrapped · Food",
+    "link": "#"
+  },
+  {
+    "title": "Loop Analytics",
+    "stat": "Side project → full-time · 9 mo",
+    "description": "Two engineers who built a niche dashboard tool on weekends until it paid more than their day jobs.",
+    "category": "Bootstrapped · SaaS",
+    "link": "#"
+  },
+  {
+    "title": "Paperbark Journals",
+    "stat": "₹1.5L debt → ₹22L/yr · 2 yrs",
+    "description": "A stationery brand that started as a way to pay off a personal loan and became a full-time export business.",
+    "category": "Bootstrapped · Retail",
+    "link": "#"
+  },
+  {
+    "title": "Notely",
+    "stat": "₹0 → 4,000 paying users · 14 mo",
+    "description": "A student who built a note-sharing app for her own college and expanded it campus by campus.",
+    "category": "Bootstrapped · Ed-tech",
+    "link": "#"
+  },
+  {
+    "title": "Hazel & Rye Coffee",
+    "stat": "Weekend gig → ₹9L/mo · 20 mo",
+    "description": "A home-roasting hobby that turned into a subscription coffee brand after one viral local post.",
+    "category": "Bootstrapped · Food",
+    "link": "#"
+  }
+]
